@@ -6,26 +6,26 @@ import IndecisionApp from "./components/IndecisionApp";
 
 ReactDOM.render(<IndecisionApp />, document.getElementById("app"));
 
-class OldSyntax {
-  constructor() {
-    this.name = "Henry";
-    this.getGreeting = this.getGreeting.bind(this);
-  }
+// class OldSyntax {
+//   constructor() {
+//     this.name = "Henry";
+//     this.getGreeting = this.getGreeting.bind(this);
+//   }
 
-  getGreeting() {
-    return `Hello, my name is ${this.name}`;
-  }
-}
+//   getGreeting() {
+//     return `Hello, my name is ${this.name}`;
+//   }
+// }
 
-const oldSyntax = new OldSyntax();
-const getGreeting = oldSyntax.getGreeting;
-console.log(getGreeting());
+// const oldSyntax = new OldSyntax();
+// const getGreeting = oldSyntax.getGreeting;
+// console.log(getGreeting());
 
-class NewSyntax {
-  name = "Blade";
-  getGreeting = () => `Hello, my name is ${this.name}`;
-}
+// class NewSyntax {
+//   name = "Blade";
+//   getGreeting = () => `Hello, my name is ${this.name}`;
+// }
 
-const newSyntax = new NewSyntax();
-const newGreeting = newSyntax.getGreeting;
-console.log(newGreeting());
+// const newSyntax = new NewSyntax();
+// const newGreeting = newSyntax.getGreeting;
+// console.log(newGreeting());
